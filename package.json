@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/eshk3n/project-lvl1-s442.git"
   },
-  "files" : [
+  "files": [
     "dist"
   ],
   "keywords": [
@@ -18,23 +18,26 @@
   "bugs": {
     "url": "https://github.com/eshk3n/project-lvl1-s442/issues"
   },
-  "dependencies" : {
-    "readline-sync" : "^1.4.9"
+  "dependencies": {
+    "readline-sync": "^1.4.9"
   },
-  "homepage" : "https://github.com/eshk3n/project-lvl1-s442#readme",
-  "devDependencies" : {
+  "homepage": "https://github.com/eshk3n/project-lvl1-s442#readme",
+  "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.3.1"
+    "@babel/preset-env": "^7.3.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
   },
-  "scripts" : {
-    "build" : "NODE_ENV=production baber src --out-dir dist --source-maps inline",
-    "prepublishOnly" : "npm run build",
-    "test" : "jest"
+  "scripts": {
+    "build": "NODE_ENV=production baber src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint . --fix",
+    "test": "jest"
   },
-  "bin" : {
+  "bin": {
     "brain-games": "dist/bin/brain-games.js"
   }
 }
-
