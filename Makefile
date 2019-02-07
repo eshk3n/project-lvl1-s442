@@ -2,11 +2,10 @@ install:
 	npm install
 
 start:
-	npx babel-node -- 'src/bin/brain-games.js'
+	npx babel-node -- "src/bin/brain-games.js"
 
 lint:
-  npx eslint .
-
+  npm run eslint ".js" "src/"
 publish:
 	npm publish
 
