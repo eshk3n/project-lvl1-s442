@@ -1,6 +1,6 @@
 {
   "name": "eshk3n-games0",
-  "version": "1.333.333",
+  "version": "1.333.334444",
   "description": "Hexlet project 1",
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "eslint": "eslint . --fix"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games":  "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   }
 }

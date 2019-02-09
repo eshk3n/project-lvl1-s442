@@ -1,0 +1,3 @@
+import even from '..';
+
+even();
