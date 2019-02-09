@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
 
 const checkAnswer = (answer) => {
-  (asnwer === 'yes');
+  if (asnwer ===  correct) return true;
+  return false;
 };
 
 const even = () => {
@@ -12,11 +13,17 @@ const even = () => {
     console.log(`Question: ${q}\n`);
     const answer = readlineSync.question('Your answer: ');
     const check = (answer) => {
-      if (answer === 'yes' && q % 2 === 0) console.log('Correct!\n');
-      else if (answer === 'no' && q % 2 !== 0) console.log('Correct\n');
-      else console.log(`"${answer}" is wrong answer.\n Let's try again, ${name}!`);
-    };
-    iter += 1;
+      if (checkAnswer) {
+        console.log('Correct!\n');
+        iter += 1;
+      }
+      else {
+        console.log(`"${answer}" is wrong answer.
+        Correct asnwer was ${correct}
+        \n Let's try again, ${name}!`);
+        iter += 1;
+      }
+    }
   }
   console.log('Congratulations!\n');
 };
