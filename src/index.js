@@ -1,5 +1,8 @@
 import readlineSync from 'readline-sync';
 
+const checkAnswer = (answer) => {
+  (asnwer === 'yes');
+};
 
 const even = () => {
   console.log('Answer "yes" if number even otherwise answer "no".\n');
